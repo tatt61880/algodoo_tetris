@@ -1,6 +1,6 @@
 ﻿/* Tetris for Algodoo 2.1.0
     Created by @tatt61880
-    Last Modified: 2018/02/11 02:18:43.
+    Last Modified: 2018/02/11 02:25:17.
  */
 Scene.my.DEBUG_MODE := false;
 
@@ -1543,3 +1543,5 @@ FileInfo -> {
     version = 20;
 };
 //}}}1
+
+// vim: expandtab shiftwidth=4 tabstop=4 softtabstop=4 fileencoding=utf-8
