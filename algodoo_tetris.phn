@@ -895,7 +895,7 @@ Scene.my.TRIPLE_PENDULUM := {
     Scene.my.addRectangleBlock(1, [0, 0.5], [1, 2]);
     Scene.my.addRectangleBlock(2, [0, 2.5], [1, 4]);
     Scene.my.addRectangleBlock(3, [0.5, 4], [2, 1]);
-    Scene.my.addTracer(3, [1, 0], 0.1, 10, [1, 1, 0, 1]);
+    Scene.my.addTracer(3, [1, 0], 0.1, 10, [1, 0, 1, 1]);
 
     Scene.my.addNormalHinge(1, 2, [0, 0.5], [0, -1.5]);
     Scene.my.addNormalHinge(2, 3, [0, 1.5], [-0.5, 0]);
@@ -1046,8 +1046,17 @@ Scene.my.nextTetrisTexts := [ // nextTetrisText Array {{{1
    ■  ■■■■■
    ■      ■
    ■  ■  ■  ■", // HARA POLYGON
-   "?", // Double Pendulum
-   "??", // Triple Pendulum
+@"
+   ■
+   ■
+   ■
+   ■", // Double Pendulum
+@"
+   ■■
+   ■
+   ■
+   ■
+   ■", // Triple Pendulum
 ];
 string.length(Scene.my.nextTetrises) != string.length(Scene.my.nextTetrisTexts) ? {
     App.GUI.ShowMessage("Warning: Array size of Scene.my.nextTetrisTexts is not correct.")
