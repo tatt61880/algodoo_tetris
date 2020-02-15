@@ -1,6 +1,6 @@
 ﻿/* Tetris for Algodoo 2.1.0
     Created by @tatt61880
-    Last Modified: 2018/02/11 06:13:41.
+    Last Modified: 2020/02/16 05:54:45.
  */
 Scene.my.DEBUG_MODE := false;
 
@@ -462,7 +462,7 @@ Scene.my.addBlock := (id__, pos__)=>{
 };
 //}}}2
 
-// Joint (col) {{{2_
+// Joint (col) {{{2
 Scene.my.addJoint := (geom0__, geom1__)=>{ // col
     Scene.addFixjoint{
         geom0 := geom0__;
@@ -473,7 +473,8 @@ Scene.my.addJoint := (geom0__, geom1__)=>{ // col
         size := 0.1;
     };
 };
-// Joint (row) {{{2_
+//}}}2
+// Joint (row) {{{2
 Scene.my.addJoint_ := (geom0__, geom1__)=>{ // row
     Scene.addFixjoint{
         geom0 := geom0__;
@@ -485,7 +486,7 @@ Scene.my.addJoint_ := (geom0__, geom1__)=>{ // row
     };
 };
 //}}}2
-// Controller {{{2_
+// Controller {{{2
 Scene.my.addController := (geomID__, radius__, pos__)=>{
     Scene.my.checkTick = Sim.tick + 7; // ###
     Scene.addCircle{
@@ -536,7 +537,8 @@ Scene.my.addController := (geomID__, radius__, pos__)=>{
         };
     };
 };
-// ControllerHinge {{{2_
+//}}}2
+// ControllerHinge {{{2
 Scene.my.addControllHinge := (geom0__, geom1__, geom0pos__, bendConstant__)=>{
     Scene.addHinge{
         geom0 := geom0__;
@@ -561,7 +563,7 @@ Scene.my.addControllHinge := (geom0__, geom1__, geom0pos__, bendConstant__)=>{
     };
 };
 //}}}2
-// NormalHinge {{{2_
+// NormalHinge {{{2
 Scene.my.addNormalHinge := (geom0__, geom1__, geom0pos__, geom1pos__)=>{
     Scene.addHinge{
         geom0 := geom0__;
@@ -577,7 +579,7 @@ Scene.my.addNormalHinge := (geom0__, geom1__, geom0pos__, geom1pos__)=>{
     };
 };
 //}}}2
-// Tracer {{{2_
+// Tracer {{{2
 Scene.my.addTracer := (geom__, relPoint__, size__, fadeTime__, color__)=>{
     Scene.addPen{
         geom := geom__;
@@ -587,7 +589,7 @@ Scene.my.addTracer := (geom__, relPoint__, size__, fadeTime__, color__)=>{
         fadeTime := fadeTime__
     };
 };
-//}}}1
+//}}}2
 // Tetrises {{{1
 // Normal {{{2
 // I-type {{{3
