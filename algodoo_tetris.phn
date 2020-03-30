@@ -313,8 +313,12 @@ Scene.my.UpdateNextTetris := ()=>{
     Scene.my.ueharaMode ? {
         (Scene.my.count % 20 == 0) ? {Scene.my.stealth_flag = false; Scene.my.ID_forNextTetris =  9} : { // uehara ball
         (Scene.my.count % 51 == 0) ? {Scene.my.stealth_flag = false; Scene.my.ID_forNextTetris = 10} : { // Tracer
-        (Scene.my.count % 12 == 0) ? {Scene.my.stealth_flag = false; Scene.my.ID_forNextTetris =  7} : { // UE
+        (Scene.my.count % 8 == 2) ? {Scene.my.stealth_flag = false; Scene.my.ID_forNextTetris =  7} : { // UE
         (Scene.my.count % 49 == 0) ? {Scene.my.stealth_flag = false; Scene.my.ID_forNextTetris =  8} : { // HARA
+        (Scene.my.count % 16 == 15) ? {Scene.my.stealth_flag = false; Scene.my.ID_forNextTetris =  14} : { // 
+        (Scene.my.count % 8 == 4) ? {Scene.my.stealth_flag = false; Scene.my.ID_forNextTetris =  13} : { // 
+        };
+        };
         };
         };
         };
